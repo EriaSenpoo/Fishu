@@ -1,0 +1,11 @@
+C:\Users\EriaS\source\repos\cs_Fish_Application\cs_Fish_Application\bin\Debug\netcoreapp3.0\cs_Fish_Application.exe
+C:\Users\EriaS\source\repos\cs_Fish_Application\cs_Fish_Application\bin\Debug\netcoreapp3.0\cs_Fish_Application.deps.json
+C:\Users\EriaS\source\repos\cs_Fish_Application\cs_Fish_Application\bin\Debug\netcoreapp3.0\cs_Fish_Application.runtimeconfig.json
+C:\Users\EriaS\source\repos\cs_Fish_Application\cs_Fish_Application\bin\Debug\netcoreapp3.0\cs_Fish_Application.runtimeconfig.dev.json
+C:\Users\EriaS\source\repos\cs_Fish_Application\cs_Fish_Application\bin\Debug\netcoreapp3.0\cs_Fish_Application.dll
+C:\Users\EriaS\source\repos\cs_Fish_Application\cs_Fish_Application\bin\Debug\netcoreapp3.0\cs_Fish_Application.pdb
+C:\Users\EriaS\source\repos\cs_Fish_Application\cs_Fish_Application\obj\Debug\netcoreapp3.0\cs_Fish_Application.csprojAssemblyReference.cache
+C:\Users\EriaS\source\repos\cs_Fish_Application\cs_Fish_Application\obj\Debug\netcoreapp3.0\cs_Fish_Application.AssemblyInfoInputs.cache
+C:\Users\EriaS\source\repos\cs_Fish_Application\cs_Fish_Application\obj\Debug\netcoreapp3.0\cs_Fish_Application.AssemblyInfo.cs
+C:\Users\EriaS\source\repos\cs_Fish_Application\cs_Fish_Application\obj\Debug\netcoreapp3.0\cs_Fish_Application.dll
+C:\Users\EriaS\source\repos\cs_Fish_Application\cs_Fish_Application\obj\Debug\netcoreapp3.0\cs_Fish_Application.pdb
