@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -7,7 +7,10 @@ namespace cs_Fish_Application
 {
     public class Fish_inventory
     {
-        public static List<Fish> inventory = new List<Fish>();
+        // I removed 'static' because it means that all instances of fish inventory share this list
+        // which is generally not desired. This means that all static uses of Fish_inventory
+        // have to be changed to use their own instance (I only changed Fisher_Input.cs)
+        public List<Fish> inventory = new List<Fish>();
 
         public void add_fish()
         {
