@@ -25,7 +25,6 @@ namespace GUI_Fishing_Application
         {
             InitializeComponent();
             this.WindowStartupLocation = WindowStartupLocation.CenterScreen;
-            Fish_inventory fishy_inv = new Fish_inventory();
             //CollectionViewSource fishy_CollectionViewSource;
             //fishy_CollectionViewSource = (CollectionViewSource)(FindResource("Fish_CollectionViewSource"));
             //fishy_CollectionViewSource.Source = Fish_inventory.inventory;
