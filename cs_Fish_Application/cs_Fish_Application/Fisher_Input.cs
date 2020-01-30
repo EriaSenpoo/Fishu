@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -13,7 +13,7 @@ namespace cs_Fish_Application
             Console.WriteLine("0. Quit.");
             Console.WriteLine("1. Start fishing.");
             Console.WriteLine("2. Check inventory.");
-            if (Fish_inventory.inventory.Count > 0)
+            if (inv.inventory.Count > 0)
             {
                 Console.WriteLine("3. Fishing technique.");
             }
@@ -34,7 +34,7 @@ namespace cs_Fish_Application
                 Console.Clear();
                 console_text();
 
-                if (Fish_inventory.inventory.Count > 0)
+                if (inv.inventory.Count > 0)
                 {
                     Console.WriteLine("4. Sell fish.\n");
                 }
@@ -60,7 +60,7 @@ namespace cs_Fish_Application
                     Console.WriteLine("Fishing techniques are coming in a future update! :^)");
                 }
 
-                if (Fish_inventory.inventory.Count > 0)
+                if (inv.inventory.Count > 0)
                 {
                     if (input.Key == ConsoleKey.D4)
                     {
