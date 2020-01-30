@@ -91,10 +91,16 @@ namespace GUI_Fishing_Application
         {
              // Made it accessible from having public classes + making the inventory list and Fish class static
         }
+        
+        Fish_inventory fishy_inv = new Fish_inventory();
+        Fish fishy;
 
         private void Button_fish_Click(object sender, RoutedEventArgs e)
         {
-            DataGrid_log.Items.Add("");
+            fishy_inv.add_fish();
+            DataGrid_log.Items.Add(new Fish(fishy.get_type(), fishy.get_value()));
+
+            // Using a foreach (Fish fishy in Fish_inventory.inventory) returns type & value
         }
     }
 }
