@@ -6,8 +6,8 @@ namespace cs_Fish_Application
 {
     public class Fish
     {
-        string fish_type { get; set; }
-        int fish_value { get; set; }
+        public string fish_type { get; set; }
+        public int fish_value { get; set; }
 
         public string get_type()
         {
