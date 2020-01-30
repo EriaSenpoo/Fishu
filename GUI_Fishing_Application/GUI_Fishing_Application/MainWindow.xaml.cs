@@ -1,4 +1,4 @@
-﻿using cs_Fish_Application;
+using cs_Fish_Application;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,13 +21,16 @@ namespace GUI_Fishing_Application
     /// </summary>
     public partial class MainWindow
     {
+        Fish_inventory fishy_inv = new Fish_inventory();
         public MainWindow()
         {
             InitializeComponent();
             this.WindowStartupLocation = WindowStartupLocation.CenterScreen;
-            //CollectionViewSource fishy_CollectionViewSource;
-            //fishy_CollectionViewSource = (CollectionViewSource)(FindResource("Fish_CollectionViewSource"));
-            //fishy_CollectionViewSource.Source = Fish_inventory.inventory;
+
+            // This line sets the data source for the grid.
+            // It will use a different enumerable (here, fishy_inv) as data for the grid,
+            // instead of requiring you to update the grid and your inventory separately.
+            DataGrid_log.ItemsSource = fishy_inv.inventory;
         }
 
         private void Log_Click(object sender, RoutedEventArgs e)
@@ -90,16 +93,17 @@ namespace GUI_Fishing_Application
         {
              // Made it accessible from having public classes + making the inventory list and Fish class static
         }
-        
-        Fish_inventory fishy_inv = new Fish_inventory();
-        Fish fishy;
 
         private void Button_fish_Click(object sender, RoutedEventArgs e)
         {
+            // We only add fish to the inventory and rely in DataGrid_log.ItemsSource
+            // from earlier to set it to the right value
             fishy_inv.add_fish();
-            DataGrid_log.Items.Add(new Fish(fishy.get_type(), fishy.get_value()));
 
-            // Using a foreach (Fish fishy in Fish_inventory.inventory) returns type & value
+            // However it only checks if the data source contains new items on first draw
+            // meaning it will not update data when you don't change the tab
+            // in which case we have to trigger a manual refresh
+            DataGrid_log.Items.Refresh();
         }
     }
 }
